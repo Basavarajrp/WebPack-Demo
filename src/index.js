@@ -1,11 +1,9 @@
-import lodash from "lodash"
-import strConcat from "./another-module"
-
-
-function component() {
+const lodash = require('lodash');
+const result = welCome();
+const component = () => {
     const element = document.createElement('div');
-    element.innerHTML  = lodash.join(["👋", strConcat], " ");
-    return element
-}
+    element.innerHTML = lodash.join(["Hello", 'from', 'Webpack'], ' ');
 
-document.body.appendChild(component())
+    return element;
+}
+document.body.appendChild(component());
