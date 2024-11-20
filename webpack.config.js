@@ -33,4 +33,14 @@ module.exports = {
             chunks: 'all',
         },
     },
+    stats: {
+        /**
+         * using stats to generate detailed statistics and this can stats file can be used to analyze the bundle 
+         * size and other details.
+         */
+        preset: 'detailed',
+        assets: true,
+        chunks: true,
+        modules: true,
+    },
 }
